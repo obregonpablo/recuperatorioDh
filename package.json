@@ -4,7 +4,7 @@
   "description": "Pagina de farb",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "",
