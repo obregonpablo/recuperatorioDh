@@ -4,7 +4,7 @@ const app = express();
 
 
 const mainRouter = require('./routes/mainRouter')
-// const userRouter = require('./routes/userRouter')
+const userRouter = require('./routes/userRouter')
 
 app.use(express.static('public'));
 
@@ -17,4 +17,6 @@ app.listen(3000, () =>{
 
 app.use('/', mainRouter)
 
-// app.use('/user', userRouter)
+app.use('/user', userRouter)
+
+

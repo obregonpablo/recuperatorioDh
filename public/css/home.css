@@ -128,14 +128,20 @@ button:hover{
 
 .carta:first-child{
     background-image: url(../img/Imagen\ de\ WhatsApp\ 2023-10-09\ a\ las\ 21.39.27_3d61d4e1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .carta:nth-child(2){
     background-image: url(../img/Imagen\ de\ WhatsApp\ 2023-10-09\ a\ las\ 21.39.28_cf0f719f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .carta:nth-child(3){
     background-image: url(../img/Imagen\ de\ WhatsApp\ 2023-10-09\ a\ las\ 21.39.27_b289cae7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 

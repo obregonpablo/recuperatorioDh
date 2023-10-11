@@ -2,11 +2,14 @@ const path = require('path');
 
 const express = require("express");
 
-const user = express.Router();
-
+const router = express.Router();
 
 const controller = require('../controllers/userController');
 
 router.get('/login', controller.login);
+// router.post('/login', controller.login);
 
-module.exports = user
+router.get('/register', controller.register);
+// router.post('/register', controller.register);
+
+module.exports = router
