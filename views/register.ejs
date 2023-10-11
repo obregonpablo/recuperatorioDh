@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+
 <body>
     <main>
         <div class="form-registro">
@@ -21,12 +17,19 @@
                 <div id="campo-registro">
                     <label for="usuario">NOMBRE DE USUARIO</label>
                     <input type="text" name="usuario">
+                <div class="foto-registro">
+                    <label for="fotoRegistro">FOTO DE PERFIL</label>
+                    <input type="file" name="fotoRegistro" accept=".jpg, .png, .jpeg, .gif" id="fotoRegistro">
+                </div>
                 </div>
                     <label for="contrasenia">CONTRASEÑA</label>
                     <input type="password" name="clave">
                 <div id="campo-registro">
                     <label for="contrasenia">CONFIRMAR CONTRASEÑA</label>
                     <input type="password" name="clave">
+                </div>
+                <div>
+                    <button>REGISTRARSE</button>
                 </div>
             </form>
         </div>

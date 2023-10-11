@@ -9,9 +9,3 @@ const controller = {
 
 module.exports = controller;
 
-    // login: (req, res)=>{
-    //     res.sendFile(path.resolve('./views/login.html'))
-    // },
-    // register: (req, res)=>{
-    //     res.sendFile(path.resolve('./views/register.html'))
-    // }

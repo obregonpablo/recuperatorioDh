@@ -1,24 +1,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
-    <title>Document</title>
-</head>
+<%- include('./partials/head',{title: "ADEMAR"})  %>
+
 <body>
-    <header>
-        <div class="container">
-            <p class="logo">ADEMAR S.A!</p>
-            <nav>
-                <a href="#somos-ademar">Quienes Somos</a>
-                <a href="#nuestras-aberturas">Productos</a>
-                <a href="/user/register">Register</a>
-                <a href="/user/login">Login</a>
-            </nav>
-        </div>
-    </header>
+    <%- include('./partials/header')  %>
 
     <section class="hero">
         <h1>Aberturas<br>ADEMAR<br></h1>
@@ -54,12 +40,6 @@
             </div>
         </div>  
     </section>
-
-    <footer>
-        <div>
-            <p>&copy; ADEMAR S.A 2011</p>
-        </div>
-    </footer>
-    
+    <%- include("./partials/footer")  %>
 </body>
 </html>
