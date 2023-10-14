@@ -1,6 +1,6 @@
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
+@import url(header.css);
+@import url(home.css);
+@import url(footer.css);
+@import url(register.css);
+@import url(login.css);
+@import url(puertas.css);

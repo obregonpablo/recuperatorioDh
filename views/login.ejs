@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<%- include('./partials/head',{title: "ADEMAR"})  %>
 <body>
     <main>
-        <form class="login">
+        <form class="login" action="/user/login">
             <h2>INICIA SESIÓN</h2>
             <div>
                 <input class="controls" type="text" name="usuario" placeholder="Nombre de usuario">
@@ -12,7 +12,7 @@
                 <input class="controls" type="email" name="email" placeholder="E-mail">
             </div>
             <div>
-                <button class="botonEnviar" type="submit">Enviar</button>
+                <button class="boton-login" type="submit">Enviar</button>
             </div>
         </form>
     </main>

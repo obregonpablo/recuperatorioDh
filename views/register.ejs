@@ -1,38 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<body>
+<%- include('./partials/head',{title: "ADEMAR"})  %>
+    <body>
     <main>
-        <div class="form-registro">
-            <form class="formularios" action="/" method="GET">
-                <h2>CREA TU CUENTA</h2>
-                <div id="campo-registro">
-                    <label for="nombre">NOMBRE</label>
-                    <input type="text" name="Nombre">
+        <div class="">
+            <form action="/user/register" method="post">
+                <h2>Formulario de Registro</h2>
+                <div class="form-group">
+                    <!-- <label for="nombre">Nombre:</label> -->
+                    <input  placeholder="Nombre"type="text" id="nombre" name="nombre" required>
                 </div>
-                <div id="campo-registro">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email">
-                </div>
-                <div id="campo-registro">
-                    <label for="usuario">NOMBRE DE USUARIO</label>
-                    <input type="text" name="usuario">
-                <div class="foto-registro">
-                    <label for="fotoRegistro">FOTO DE PERFIL</label>
-                    <input type="file" name="fotoRegistro" accept=".jpg, .png, .jpeg, .gif" id="fotoRegistro">
-                </div>
-                </div>
-                    <label for="contrasenia">CONTRASEÑA</label>
-                    <input type="password" name="clave">
-                <div id="campo-registro">
-                    <label for="contrasenia">CONFIRMAR CONTRASEÑA</label>
-                    <input type="password" name="clave">
+                <div class="form-group">
+                    <!-- <label for="email">Correo Electrónico:</label> -->
+                    <input placeholder="Email" type="email" id="email" name="email" required>
                 </div>
                 <div>
-                    <button>REGISTRARSE</button>
+                    <!-- <label for="foto-de-perfil">Foto</label> -->
+                    <input placeholder="" type="file" name="fotoRegistro" accept=".jpg, .png, .jpeg, .gif" id="fotoRegistro">
+                </div>
+                <div class="form-group">
+                    <!-- <label for="contrasena">Contraseña:</label> -->
+                    <input placeholder="Contraseña" type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="confirmar-contrasena">Confirmar Contraseña:</label> -->
+                    <input placeholder="confirmar contraseña" type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+                </div>
+                <div class="form-group">
+                    <button class="boton-registro"type="submit">Registrar</button>
                 </div>
             </form>
         </div>
     </main>
 </body>
 </html>
+
+
+
+<!-- <div class="form-registro">
+    <form class="formularios" action="/user/register" method="POST" enctype="multipart/form-data">
+        <h2>CREA TU CUENTA</h2>
+        <div id="campo-registro">
+            <label for="nombre">NOMBRE</label>
+            <input type="text" name="Nombre">
+        </div>
+        <div id="campo-registro">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email">
+        </div>
+        <div id="campo-registro">
+            <label for="usuario">NOMBRE DE USUARIO</label>
+            <input type="text" name="usuario">
+        <div class="foto-registro">
+            <label for="fotoRegistro">FOTO DE PERFIL</label>
+            <input type="file" name="fotoRegistro" accept=".jpg, .png, .jpeg, .gif" id="fotoRegistro">
+        </div>
+        </div>
+            <label for="contrasenia">CONTRASEÑA</label>
+            <input type="password" name="clave">
+        <div id="campo-registro">
+            <label for="contrasenia">CONFIRMAR CONTRASEÑA</label>
+            <input type="password" name="clave">
+        </div>
+        <div>
+            <button>REGISTRARSE</button>
+        </div>
+    </form>
+</div> -->
