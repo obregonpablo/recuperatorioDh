@@ -40,14 +40,28 @@ module.exports = (sequelize, dataTypes) => {
         },
         created_at: dataTypes.DATE,
         updated_at: dataTypes.DATE
-    }
-}
+    };
     
     let config = {
         timestamps: true,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
-    };
+    }
 
-    // const Users = sequelize.define ("Users", cols, config); 
+    const Users = sequelize.define ("Users", cols, config); 
+    
+    Users.associate = function (models) {
+
+    Users.belongsTo (models.Roles, {
+        as: "Roles",
+        foreignKey: "rol_id",
+        timestamps: false
+     }) 
+      
+  }
+
+  return Users;
+
+
+}
